@@ -1,3 +1,6 @@
+html {
+	font-size: 16px;
+}
 body {
 	display: flex;
 	font-family: monospace;
@@ -23,4 +26,17 @@ body {
 .selected {
 	color: #000;
 	background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		font-size: 1.5rem;
+	}
+  .day {
+    width: 45px;
+    height: 45px;
+  }
+  .month {
+  	min-width: 60px;
+  }
 }
