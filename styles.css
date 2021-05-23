@@ -2,15 +2,29 @@ html {
 	font-size: 16px;
 }
 body {
-	display: flex;
 	font-family: monospace;
 	background: #000;
 	color: #fff;
+  max-width: 720px;
+  margin: 0 auto 3em auto;
 }
-.month {
-	width: 8.333%;
+.month-names {
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  background-color: #000;
+  height: 3.5em;
+}
+.months {
+  display: flex;
+  padding-top: 3.5em;
+}
+.month-name {
+  display: none;
+}
+.month, .month-names > div {
+	min-width: 60px;
 	text-align: center;
-	margin-top: 1rem;
 }
 .day {
 	display: flex;
@@ -31,12 +45,11 @@ body {
 @media only screen and (max-width: 768px) {
 	body {
 		font-size: 1.5rem;
+    margin-left: 1em;
+    margin-right: 1em;
 	}
   .day {
     width: 45px;
     height: 45px;
-  }
-  .month {
-  	min-width: 60px;
   }
 }
