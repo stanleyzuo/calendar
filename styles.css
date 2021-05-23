@@ -39,14 +39,14 @@ body {
 }
 .selected {
 	color: #000;
-	background-color: #fff;
+	background-color: #dcd0ff;
 }
 
 @media only screen and (max-width: 768px) {
 	body {
 		font-size: 1.5rem;
-    margin-left: 1em;
-    margin-right: 1em;
+    min-width: 720px;
+    padding: 0 1em;
 	}
   .day {
     width: 45px;
